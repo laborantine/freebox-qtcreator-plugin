@@ -1,0 +1,24 @@
+{
+    "Id": "freebox",
+    "Name": "Freebox",
+    "Version": "${IDE_VERSION}",
+    "CompatVersion": "${IDE_VERSION}",
+    "VendorId": "fbx",
+    "Vendor": "Freebox SAS",
+    "Copyright": "(C) 2014 Freebox SAS",
+    "License": "GNU LGPL 2.1 or later",
+    "Category": "Device Support",
+    "Description": "Run, debug and package QML projects for the Freebox Player.",
+    "Url": "https://dev.freebox.fr/sdk/player.html",
+    ${IDE_PLUGIN_DEPENDENCIES},
+    "Mimetypes": [
+        "<?xml version='1.0'?>",
+        "<mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>",
+        "  <mime-type type='application/vnd.fbx-qmlproject'>",
+        "    <sub-class-of type='application/x-qmlproject'/>",
+        "    <comment>Freebox QML project</comment>",
+        "    <glob pattern='*.fbxproject'/>",
+        "  </mime-type>",
+        "</mime-info>"
+    ]
+}
